@@ -6,7 +6,7 @@ String.prototype.reverse = function() {
 }
 
 // Adds `if empty` to all strings.
-String.prototype.isEmpty = function () {
+String.prototype.isEmpty = function() {
   if (this.match(/^$/)) {
     return true;
   } else {
@@ -33,7 +33,9 @@ function Phrase(content) {
 
   // Returns true if the phrase is a palindrome, false otherwise.
   this.palindrome = function palindrome() {
-    if (this.processedContent()) {
+    if (this.processedContent().isEmpty()) {
+      return false;
+    } else if (this.processedContent()) {
       return this.processedContent() === this.processedContent().reverse();
     } else {
       return false;
