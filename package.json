@@ -1,6 +1,6 @@
 {
-  "name": "palindrome",
-  "version": "0.1.0",
+  "name": "iqbalnurjadin-palindrome",
+  "version": "0.1.1",
   "description": "Palindrome detector",
   "main": "index.js",
   "scripts": {
